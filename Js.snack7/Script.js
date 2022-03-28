@@ -1,3 +1,12 @@
-for (var i = 1; i<=1000; i++) {
-    console.log(Math.pow(2,i));
-  }
+let arrayEsponenti=[];
+let n=parseInt(prompt("Inserisci numero"));
+let numeri=cuboNumeri(n);
+function cuboNumeri(risultato){
+    while(risultato > 0){
+        esponenziale= Math.pow( risultato , 3);
+        console.log(esponenziale);
+        arrayEsponenti.push(esponenziale);
+        risultato--;
+    }
+}
+alert(arrayEsponenti);

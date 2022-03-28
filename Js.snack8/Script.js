@@ -1,12 +1,10 @@
-var numUtente = prompt('inserisci un n di 4 cifre');
+let arrayDieciNumeri=[0 , 1 , 2  , 3 , 4 , 5 , 6 , 7 , 8 , 9];
 
-var somma = 0;
-console.log(numUtente);
-
-for (var i = 0; i < numUtente.length; i++) {
-  // console.log(numUtente[i]);
-  console.log(parseInt(numUtente[i]));
-  somma += parseInt(numUtente[i]);
+let somma=0;
+let numeri=sommaRisultati(somma);
+function sommaRisultati(sommaArray){
+for(let i= 0 ; i<arrayDieciNumeri.length ; i++){
+    sommaArray=sommaArray + arrayDieciNumeri[i];
 }
-
-console.log(somma);
+alert("La somma dei numeri dell'array è: " + sommaArray);
+}
